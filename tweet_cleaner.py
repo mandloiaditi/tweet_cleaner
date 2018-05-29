@@ -9,13 +9,10 @@ import nltk
 from autocorrect import spell
 #from nltk.tokenize import sent_tokenize 
 
-
 class t_cleaner:
 
 	def __init__(self,tweet):
 		self.tweet = tweet
-
-	
 
 	def split_words(self): 
 
@@ -29,8 +26,7 @@ class t_cleaner:
 		self.tweet = re.sub(r'(I)([a-z]){2,3}[^\s]',r'\1[ ]\2',self.tweet)
 		return self
 
-
-
+	
 	def basic_clean(self):
 
 		 self.tweet = re.sub(r'(#)(\s?[^\s]*)', r' \2', self.tweet)
