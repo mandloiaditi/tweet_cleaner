@@ -8,8 +8,7 @@ import string
 import nltk 
 from autocorrect import spell
 #from nltk.tokenize import sent_tokenize 
-#import enchant 
-#from enchant.checker import SpellChecker
+
 
 class t_cleaner:
 
