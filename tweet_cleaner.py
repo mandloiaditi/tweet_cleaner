@@ -23,7 +23,7 @@ class t_cleaner:
 		self.tweet = re.sub(r'(@[a-zA-Z0-9]+[^\s])', r' *NAME* ', self.tweet)
 		 # to clear @names  
         
-         # to split words JoinedLikeThis
+                 # to split words JoinedLikeThis
 		splitted_words =  re.sub( r'([A-Z][a-z0-9]+)', r' \1', self.tweet).split()   
 		self.tweet = ' '.join(splitted_words) 
  
@@ -64,8 +64,8 @@ class t_cleaner:
 		 emoji_pattern = re.compile("["
 		 u"\U0001F600-\U0001F64F"  # emoticons
 		 u"\U0001F300-\U0001F5FF"  # symbols & pictographs
-         u"\U0001F680-\U0001F6FF"  # transport & map symbols
-         u"\U0001F1E0-\U0001F1FF"  # flags 
+                 u"\U0001F680-\U0001F6FF"  # transport & map symbols
+                 u"\U0001F1E0-\U0001F1FF"  # flags 
                            "]+", flags=re.UNICODE)
 		 self.tweet = emoji_pattern.sub(r'', self.tweet)
 		 return self
@@ -89,8 +89,7 @@ class t_cleaner:
 		 return self
 
 
-       
-	''' this is a checkpoint '''
+''' this is a checkpoint '''
 tweet = '''
            125642617268176: hello @This lesving 
            noi #Hello !!!! Iam  #LetUsSeeIfThisThrngWorks 
