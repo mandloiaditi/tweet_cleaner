@@ -84,7 +84,7 @@ class t_cleaner:
 		 return self
 
 
-''' this is a checkpoint '''
+# this is a checkpoint
 tweet = '''
            125642617268176: hello @This lesving 
            noi #Hello !!!! Iam  #LetUsSeeIfThisThrngWorks 
